@@ -6,6 +6,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -22,7 +23,18 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	}
+
+	@media screen and (max-width: 768px) {
+		html,body
+			{
+				width: 100%;
+				margin: 0px;
+				padding: 0px;
+				overflow-x: hidden; 
+			}
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -84,7 +96,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 350px;
 		}
 
 	}
@@ -138,10 +150,18 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 768px) {
 
 			body, input, select, textarea {
 				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			body, input, select, textarea {
+				font-size: 10pt;
 			}
 
 		}
@@ -2909,6 +2929,13 @@ input, select, textarea {
 		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	  }
 
+	  @media screen and (max-width: 480px) {
+
+		.card {
+			contain: content;
+		}
+	}
+
 	  /* tag */
 
 	.tag {
@@ -2917,6 +2944,13 @@ input, select, textarea {
 		border-radius: 5px;
 	  }
 	  
+	  @media screen and (max-width: 480px) {
+
+		.tag {
+			font-size: .6em;
+		}
+
+	}
 
 /* Split */
 
@@ -3153,6 +3187,7 @@ input, select, textarea {
 				min-height: 15em;
 				background-size: contain;
 				background-repeat: no-repeat;
+				overflow-x: hidden;
 			}
 
 			.spotlights > section > .content {
@@ -3160,6 +3195,7 @@ input, select, textarea {
 			}
 
 		}
+		
 
 /* Table */
 
@@ -3903,7 +3939,7 @@ input, select, textarea {
 				text-align: center;
 				top: 0;
 				width: 100%;
-				font-size: .75em;
+				font-size: .65em;
 			}
 
 				#sidebar > .inner {
